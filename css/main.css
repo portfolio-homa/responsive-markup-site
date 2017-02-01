@@ -1,3 +1,40 @@
+@font-face{
+    font-family: 'CrimsonText-Italic';
+    src: url('../fonts/crimsonText-italic/CrimsonText-Italic.eot');
+    src: url('../fonts/crimsonText-italic/CrimsonText-Italic.eot?iefix') format('eot'),
+    url('../fonts/crimsonText-italic/CrimsonText-Italic.woff') format('woff'),
+    url('../fonts/crimsonText-italic/CrimsonText-Italic.ttf') format('truetype'),
+    url('../fonts/crimsonText-italic/CrimsonText-Italic.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'CrimsonText-Roman';
+    src: url('../fonts/crimsonText-roman/CrimsonText-Roman.eot');
+    src: url('../fonts/crimsonText-roman/CrimsonText-Roman.eot?iefix') format('eot'),
+    url('../fonts/crimsonText-roman/CrimsonText-Roman.woff') format('woff'),
+    url('../fonts/crimsonText-roman/CrimsonText-Roman.ttf') format('truetype'),
+    url('../fonts/crimsonText-roman/CrimsonText-Roman.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/montserrat-black/Montserrat-Black.eot');
+    src: url('../fonts/montserrat-black/Montserrat-Black.eot?iefix') format('eot'),
+    url('../fonts/montserrat-black/Montserrat-Black.woff') format('woff'),
+    url('../fonts/montserrat-black/Montserrat-Black.ttf') format('truetype'),
+    url('../fonts/montserrat-black/Montserrat-Black.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/montserrat-regular/Montserrat-Regular.eot');
+    src: url('../fonts/montserrat-regular/Montserrat-Regular.eot?iefix') format('eot'),
+    url('../fonts/montserrat-regular/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/montserrat-regular/Montserrat-Regular.ttf') format('truetype'),
+    url('../fonts/montserrat-regular/Montserrat-Regular.svg#webfont') format('svg');
+}
+
+
 .header {
     width: 100%;
     background-color: #ffffff;
@@ -31,7 +68,7 @@
 }
 
 .header__logo {
-    margin: 32px 128px 32px 32px;
+    margin: 32px 126px 32px 32px;
 
 }
 
@@ -43,6 +80,8 @@
     text-decoration: none;
     text-transform: capitalize;
     padding-left: 29px;
+    color: #343e5c;
+    font: 14px 'Montserrat-Regular';
 }
 
 .header__button {
@@ -54,19 +93,24 @@
     height: 17px;
     display: inline-block;
     background: url("../images/sprite.png") 0 -27px no-repeat;
-    margin: 36px 8px 0 140px;
+    margin: 36px 8px 0 136px;
 }
 
 .header__text {
     text-transform: uppercase;
     margin-top: 41px;
+    font: 11px 'Montserrat-Regular';
+    color: #343e5c;
+
 }
 
 .header__count {
     background-color: #e3e8f0;
     border-radius: 50px;
-    margin: 34px 29px 0 8px;
-    padding: 7px 7px;
+    margin: 34px 19px 0 8px;
+    padding: 7px 11px;
+    font: 11px 'Montserrat-Regular';
+    color: #343e5c;
 }
 
 .header__button {
@@ -75,4 +119,82 @@
     border: 2px solid #e3e8f0;
     border-radius: 50px;
     padding: 10px 15px;
+    font: 11px 'Montserrat-Regular';
+    color: #343e5c;
+    margin-top: 29px;
+}
+
+.tabs {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.tabs__wrapper {
+    width: 1170px;
+    overflow: hidden;
+    margin: auto;
+    border-right: 1px solid #f0f2f7;
+}
+
+.tabs__list {
+    width: 969px;
+    border-right: 1px solid #f0f2f7;
+    padding: 24px 0;
+    float: left;
+}
+
+.tabs__list-item {
+    text-decoration: none;
+    font: 11px 'Montserrat-Regular';
+    color: #b9bed1;
+    margin: 0 30px 23px 0;
+}
+
+.tabs__list-item:hover, .tabs__list-item_active  {
+    color: #343e5c;
+}
+
+.tabs__list-item_position {
+    margin-left: 360px;
+}
+
+.tabs__icon-search {
+    float: left;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: url("../images/sprite.png") -5px -57px no-repeat;
+    margin: 24px 10px 0 20px;
+}
+
+.tabs__input {
+    width: 145px;
+    float: left;
+    margin-top: 24px;
+    border: none;
+    font: 14px 'Montserrat-Regular';
+    color: #a1a7bd;
+}
+
+.slide {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.slide__banner {
+    margin: auto;
+}
+
+.slide__img {
+    width: 1400px;
+    height: 500px;
+}
+
+.slide__icon-arrow {
+    float: right;
+}
+
+.slide__info {
+    float: left;
 }
