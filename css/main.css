@@ -178,23 +178,89 @@
 
 .slide {
     width: 100%;
-    overflow: hidden;
-
+    background-color: #1c1e23;
+    position: relative;
 }
 
 .slide__banner {
-    margin: auto;
-}
-
-.slide__img {
-    width: 1400px;
+    width: 880px;
     height: 500px;
+    margin: auto;
+    overflow: hidden;
 }
 
 .slide__icon-arrow {
     float: right;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background: url("../images/sprite.png") 0 -91px no-repeat;
+    margin: 227px 165px 0 0;
+}
+
+.slide__img {
+    width: 300px;
+    height: 875px;
+    float: right;
+    margin-top: -68px;
 }
 
 .slide__info {
+    width: 450px;
     float: left;
+    margin-top: 105px;
+}
+
+/*.slide__info h1 p {
+    margin: 0;
+}*/
+
+.slide__title {
+    text-transform: capitalize;
+    font: 42px 'Montserrat-Black';
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 33px;
+}
+
+.slide__text {
+    font: 16px 'CrimsonText-Roman';
+    color: #ffffff;
+    margin-bottom: 65px;
+}
+
+.slide__button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 11px 'Montserrat-Regular';
+    color: #ffffff;
+    background-color: #2754eb;
+    border-radius: 50px;
+    padding: 15px 50px;
+    margin-top: 0;
+}
+
+.slide__item-icon {
+    width: 64px;
+    height: 8px;
+    margin: auto;
+    position: absolute;
+    top: 454px;
+    left: 45%;
+}
+
+.slide__item-next {
+    width: 4px;
+    height: 4px;
+    float: left;
+    border: 2px solid #8e8f91;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.slide__item-next:active, .slide__item-next:hover, .slide__item-next_active {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border: none;
 }
