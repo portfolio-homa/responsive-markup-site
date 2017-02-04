@@ -72,7 +72,7 @@
         <div class="sort">
             <p class="sort__text">sort by:</p>
             <p class="sort__selected">best match</p>
-            <i class="sort__icon-checked"></i>
+            <i class="icon-checked"></i>
             <div class="main-sort">
                 <p class="main-sort__text_margin">keywords</p>
                 <input class="main-sort__input-name" type="text" placeholder="Tablet">
@@ -89,7 +89,113 @@
         </div>
 
         <div class="filter">
+            <div class="filter__panels">
+                <ul class="list">
+                    <li class="list__item">
+                        <a class="list__item-link" href="#">
+                            <p class="list__item-text">Top sales</p>
+                            <i class="icon-select icon-select_active"></i>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__item-link" href="#">
+                            <p class="list__item-text">Brand focus</p>
+                            <i class="icon-select icon-select_active"></i>
+                        </a>
+                    </li>
+                    <li class="list__item list__item_active">
+                        <a class="list__item-link" href="#">
+                            <p class="list__item-text">Hi-tech</p>
+                            <i class="icon-select icon-select_active"></i>
+                        </a>
+                        <ul class="inside-list">
+                            <li class="inside-list__item">
+                                <a class="inside__item-link" href="#">
+                                    <p class="inside__item-text">Cell phones</p>
+                                </a>
+                            </li>
+                            <li class="inside-list__item">
+                                <a class="inside__item-link" href="#">
+                                    <p class="inside__item-text">Cameras</p>
+                                </a>
+                            </li>
+                            <li class="inside-list__item">
+                                <a class="inside__item-link" href="#">
+                                    <p class="inside__item-text">Computers</p>
+                                </a>
+                            </li>
+                            <li class="inside-list__item">
+                                <a class="inside__item-link" href="#">
+                                    <p class="inside__item-text">Tv, audio</p>
+                                </a>
+                            </li>
+                            <li class="inside-list__item">
+                                <a class="inside__item-link" href="#">
+                                    <p class="inside__item-text">Video games</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__item-link" href="#">
+                            <p class="list__item-text">Home</p>
+                            <i class="icon-select icon-select_active"></i>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__item-link" href="#">
+                            <p class="list__item-text">Sale</p>
+                            <i class="icon-select icon-select_active"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="filter__brands">
+                <p class="filter__text">Available</p>
+                <ul class="filter-list">
+                    <li class="filter-list__item">
+                        <input id="input-radio" class="item__radio" type="radio" value="storage" name="radio" checked>
+                        <label for="input-radio" class="item__label">In storage</label>
+                        <span class="item__number">45</span>
+                    </li>
+                    <li class="filter-list__item">
+                        <input id="input-radio2" class="item__radio" type="radio" value="online-shop" name="radio">
+                        <label for="input-radio2" class="item__label">In online shop</label>
+                        <span class="item__number">12</span>
+                    </li>
+                </ul>
+                <div class="filter__content">
+                    <a class="filter__link" href="#">All</a>
+                    <p class="filter__text">Brands</p>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-list__item">
+                        <input id="input-checkbox" class="item__checkbox" type="checkbox" value="apple" checked>
+                        <label for="input-checkbox" class="item__label">Apple</label>
+                        <span class="item__number">32</span>
+                    </li>
+                    <li class="filter-list__item">
+                        <input id="input-checkbox2" class="item__checkbox" type="checkbox" value="jbl">
+                        <label for="input-checkbox2" class="item__label">Jbl</label>
+                        <span class="item__number">14</span>
+                    </li>
+                    <li class="filter-list__item">
+                        <input id="input-checkbox3" class="item__checkbox" type="checkbox" value="bose">
+                        <label for="input-checkbox3" class="item__label">Bose</label>
+                        <span class="item__number">3</span>
+                    </li>
+                    <li class="filter-list__item">
+                        <input id="input-checkbox4" class="item__checkbox" type="checkbox" value="nest">
+                        <label for="input-checkbox4" class="item__label">Nest</label>
+                        <span class="item__number">5</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter__condition"></div>
+
+            <div class="filter__delivery"></div>
         </div>
 
         <div class="products">

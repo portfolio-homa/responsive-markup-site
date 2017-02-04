@@ -254,7 +254,7 @@
     margin-right: 8px;
 }
 
-.slide__item-next:active, .slide__item-next:hover, .slide__item-next_active {
+.slide__item-next:hover, .slide__item-next:active, .slide__item-next_active {
     width: 8px;
     height: 8px;
     background-color: #ffffff;
@@ -280,7 +280,7 @@
     margin-bottom: 30px;
 }
 
-.sort__text, .sort__selected, .sort__icon-checked, .main-sort, .main-sort__text_margin, .main-sort__text_margins, .main-sort__icon-check-mark, .main-sort__text-shipping {
+.sort__text, .sort__selected, .icon-checked, .main-sort, .main-sort__text_margin, .main-sort__text_margins, .main-sort__icon-check-mark, .main-sort__text-shipping {
     float: left;
 }
 
@@ -299,7 +299,7 @@
     margin-top: 23px;
 }
 
-.sort__icon-checked {
+.icon-checked {
     width: 10px;
     height: 6px;
     display: inline-block;
@@ -372,4 +372,239 @@
     font: 13px 'Montserrat-Regular';
     color: #343e5c;
     margin-top: 23px;
+}
+
+.filter {
+    width: 270px;
+    float: left;
+}
+
+.products {
+    width: 900px;
+    float: right;
+}
+
+.filter__panels, .filter__brands, .filter__condition, .filter__delivery {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.filter__panels {
+    margin-bottom: 30px;
+}
+
+.list {
+    overflow: hidden;
+    padding: 0;
+}
+
+.list__item {
+    list-style-type: none;
+    border-bottom: 1px solid #e4e5e7;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.list__item:last-child {
+    border-bottom: none;
+}
+
+.list__item-link {
+    text-decoration: none;
+}
+
+.list__item-text {
+    text-transform: capitalize;
+    font: 13px 'Montserrat-Regular';
+    color: #343e5c;
+    padding-left: 25px;
+    float: left;
+}
+
+.icon-select {
+    width: 6px;
+    height: 10px;
+    display: inline-block;
+    background: url("../images/sprite.png") -8px -198px no-repeat;
+    float: right;
+    margin: 16px 19px 0 0;
+}
+
+.list__item .inside-list {
+    display: none;
+}
+
+.list__item:active .inside-list/*, .list__item_active .inside-list*/ {
+    display: block;
+}
+
+.list__item:active .icon-select_active/*, .list__item_active .icon-select_active*/ {
+    width: 10px;
+    height: 6px;
+    background: url("../images/sprite.png") -5px -229px no-repeat;
+}
+
+.inside-list {
+    background-color: #f0f2f7;
+    margin-top: 42px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.inside-list__item {
+    list-style-type: none;
+    border-top: 1px solid #e4e5e7;
+}
+
+.inside__item-link {
+    text-decoration: none;
+}
+
+.inside__item-text {
+    text-transform: uppercase;
+    font: 11px 'Montserrat-Regular';
+    color: #a1a7bd;
+    padding-left: 25px;
+}
+
+.filter__brands {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.filter__content {
+    border-top: 1px solid #e4e5e7;
+    border-bottom: 1px solid #e4e5e7;
+}
+
+.filter__text:first-child {
+    border-bottom: 1px solid #e4e5e7;
+}
+
+.filter__text {
+    text-transform: uppercase;
+    font: 11px 'Montserrat-Regular';
+    color: #343e5c;
+    padding: 20px 0 20px 25px;
+    margin: 0;
+}
+
+.filter-list {
+    padding: 0;
+}
+
+.filter-list__item {
+    padding-left: 25px;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.filter-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.item__label {
+    text-transform: capitalize;
+    font: 13px 'Montserrat-Regular';
+    color: #343e5c;
+}
+
+.item__number {
+    float: right;
+    margin-right: 20px;
+    font: 13px 'Montserrat-Regular';
+    color: #b8bfd3;
+}
+
+.item__radio[type="radio"]:not(:checked),
+.item__radio[type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+.item__radio[type="radio"]:not(:checked) + label,
+.item__radio[type="radio"]:checked + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.item__radio[type="radio"]:not(:checked) + label:before,
+.item__radio[type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e4e8f0;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.item__radio[type="radio"]:checked + label:after {
+    content: url("../images/selected-radioButton.png");
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    font-size: 13px;
+    line-height: 0.8;
+}
+
+.item__checkbox[type="checkbox"]:not(:checked),
+.item__checkbox[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+.item__checkbox[type="checkbox"]:not(:checked) + label,
+.item__checkbox[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.item__checkbox[type="checkbox"]:not(:checked) + label:before,
+.item__checkbox[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e4e8f0;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.item__checkbox[type="checkbox"]:checked + label:before{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #00e2aa;
+}
+
+
+/* checked mark aspect*/
+.item__checkbox[type="checkbox"]:not(:checked) + label:after,
+.item__checkbox[type="checkbox"]:checked + label:after {
+    content: url("../images/icon-check.png");
+    width: 10px;
+    height: 7px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    font-size: 13px;
+    line-height: 0.8;
+}
+
+.filter__link {
+    text-transform: uppercase;
+    float: right;
+    font: 13px 'Montserrat-Regular';
+    color: #2754eb;
+    margin-top: 20px;
+    margin-right: 20px;
 }
