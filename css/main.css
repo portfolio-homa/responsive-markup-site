@@ -374,7 +374,7 @@
     margin-top: 23px;
 }
 
-.filter {
+.filter, .product {
     width: 270px;
     float: left;
 }
@@ -384,18 +384,21 @@
     float: right;
 }
 
-.filter__panels, .filter__brands, .filter__condition, .filter__delivery {
+.filter__item, .product {
     background-color: #ffffff;
     border-radius: 4px;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
-.filter__panels {
-    margin-bottom: 30px;
+.filter__item:first-child {
+    overflow: inherit;
 }
 
 .list {
     overflow: hidden;
     padding: 0;
+    margin: 0;
 }
 
 .list__item {
@@ -465,11 +468,6 @@
     font: 11px 'Montserrat-Regular';
     color: #a1a7bd;
     padding-left: 25px;
-}
-
-.filter__brands {
-    margin-bottom: 30px;
-    overflow: hidden;
 }
 
 .filter__content {
@@ -608,3 +606,136 @@
     margin-top: 20px;
     margin-right: 20px;
 }
+
+.filter-list__item_display:first-child {
+    float: left;
+    border-right: 1px solid #e4e5e7;
+}
+
+.filter-list__item_display {
+    display: inline-block;
+    float: right;
+    padding-right: 43px;
+    margin: -17px 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.product {
+    height: 380px;
+    margin-left: 30px;
+}
+
+.product__img {
+    width: 205px;
+    height: 195px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.product__title, .product__text, .product__price {
+    text-align: center;
+}
+
+.product__title {
+    text-transform: capitalize;
+    font: 16px 'Montserrat-Regular';
+    color: #1c1e23;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.product__text {
+    text-transform: uppercase;
+    font: 12px 'Montserrat-Regular';
+    color: #b8bfd3;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.product__price {
+    font: 14px 'Montserrat-Regular';
+    color: #343e5c;
+    margin-top: 0;
+    margin-bottom: 37px;
+}
+
+.product__double {
+    width: 570px;
+}
+
+.product__img-text {
+    position: relative;
+}
+
+.product__img-big {
+    width: 570px;
+    height: 305px;
+    margin: 0;
+}
+
+.product__price_color {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font: 12px 'Montserrat-Regular';
+    color: #ffffff;
+    background-color: #1c1e23;
+    border-radius: 3px;
+    padding: 5px 8px;
+    margin-bottom: 0;
+}
+
+.product__text-block, .product__button {
+    display: inline-block;
+}
+
+.product__text-block {
+    float: left;
+}
+
+.product__button {
+    float: right;
+}
+
+.product__title_place {
+    margin: 20px 0 14px 25px;
+}
+
+.product__text_place {
+    text-align: inherit;
+    margin: 0 0 20px 25px;
+}
+
+.product__button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 11px 'Montserrat-Regular';
+    color: #3a405b;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.product__button-right {
+    border: 2px solid #e4e5e7;
+    border-radius: 0 50px 50px 0;
+    border-left: none;
+}
+
+.product__button-left {
+    border: 2px solid #e4e5e7;
+    border-radius: 50px 0 0 50px;
+    margin-right: 0;
+}
+
+.product__button-right, .product__button-left {
+    padding: 10px 30px;
+}
+
+.product_background {
+    background: url("../images/thermostat.png") -121px 0 no-repeat;
+}
+
+.product__price_color-grey {
+    color: #6d6c6b;
+ }

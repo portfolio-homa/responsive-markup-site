@@ -85,11 +85,11 @@
             </div>
             <p class="sort__text">ship to:</p>
             <p class="sort__selected">usa</p>
-            <i class="sort__icon-checked"></i>
+            <i class="icon-checked"></i>
         </div>
 
-        <div class="filter">
-            <div class="filter__panels">
+        <section class="filter">
+            <div class="filter__item">
                 <ul class="list">
                     <li class="list__item">
                         <a class="list__item-link" href="#">
@@ -151,7 +151,7 @@
                 </ul>
             </div>
 
-            <div class="filter__brands">
+            <div class="filter__item">
                 <p class="filter__text">Available</p>
                 <ul class="filter-list">
                     <li class="filter-list__item">
@@ -193,14 +193,125 @@
                 </ul>
             </div>
 
-            <div class="filter__condition"></div>
+            <div class="filter__item">
+                <div class="filter__content">
+                    <a class="filter__link" href="#">See all</a>
+                    <p class="filter__text">Condition</p>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-list__item">
+                        <input id="input-checkbox5" class="item__checkbox" type="checkbox" value="new" checked>
+                        <label for="input-checkbox5" class="item__label">New</label>
+                    </li>
+                    <li class="filter-list__item">
+                        <input id="input-checkbox6" class="item__checkbox" type="checkbox" value="manufacturer">
+                        <label for="input-checkbox6" class="item__label">Manufacturer Refurbished</label>
+                    </li>
+                    <li class="filter-list__item">
+                        <input id="input-checkbox7" class="item__checkbox" type="checkbox" value="seller">
+                        <label for="input-checkbox7" class="item__label">Seller Refurbished</label>
+                    </li>
+                    <li class="filter-list__item">
+                        <input id="input-checkbox8" class="item__checkbox" type="checkbox" value="used" checked>
+                        <label for="input-checkbox8" class="item__label">Used</label>
+                    </li>
+                    <li class="filter-list__item">
+                        <input id="input-checkbox9" class="item__checkbox" type="checkbox" value="or">
+                        <label for="input-checkbox9" class="item__label">For parts or not working</label>
+                    </li>
+                </ul>
+            </div>
 
-            <div class="filter__delivery"></div>
-        </div>
+            <div class="filter__item">
+                <p class="filter__text">Delivery options</p>
+                <ul class="filter-list">
+                    <li class="filter-list__item filter-list__item_display">
+                        <input id="input-radio3" class="item__radio" type="radio" value="free" name="radio" checked>
+                        <label for="input-radio3" class="item__label">Free</label>
+                    </li>
+                    <li class="filter-list__item filter-list__item_display">
+                        <input id="input-radio4" class="item__radio" type="radio" value="price" name="radio">
+                        <label for="input-radio4" class="item__label">$4.99</label>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="products">
+        <section class="products">
+            <div class="product">
+                <img class="product__img" src="images/apple-tv.png" alt="#">
+                <h2 class="product__title">Apple TV 32GB</h2>
+                <p class="product__text">Black</p>
+                <p class="product__price">$49.99</p>
+            </div>
+            <div class="product">
+                <img class="product__img" src="images/watch.png" alt="#">
+                <h2 class="product__title">Pebble Time</h2>
+                <p class="product__text">Red</p>
+                <p class="product__price">$29.99</p>
+            </div>
 
-        </div>
+            <div class="product">
+                <img class="product__img" src="images/usb-port.png" alt="#">
+                <h2 class="product__title">Zendure 4-Port USB</h2>
+                <p class="product__text">White</p>
+                <p class="product__price">$49.99</p>
+            </div>
+            <div class="product">
+                <img class="product__img" src="images/balance.png" alt="#">
+                <h2 class="product__title">Withings Smart Body Analyzer ws-50</h2>
+                <p class="product__text">Black</p>
+                <p class="product__price">$39.99</p>
+            </div>
+            <div class="product product__double">
+                <div class="product__img-text">
+                    <p class="product__price product__price_color">$39.99</p>
+                    <img class="product__img product__img-big" src="images/dynamic.png" alt="#">
+                </div>
+                <div class="product__text-block">
+                    <h2 class="product__title product__title_place">JBL Charge 2+</h2>
+                    <p class="product__text product__text_place">Black</p>
+                </div>
+                <div class="product__button">
+                    <a class="product__button product__button-right" href="#">Buy now</a>
+                    <a class="product__button product__button-left" href="#"> 16 gb</a>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product__img" src="images/lens.png" alt="#">
+                <h2 class="product__title">Ollo Clip New</h2>
+                <p class="product__text">Silver</p>
+                <p class="product__price">$19.99</p>
+            </div>
+            <div class="product">
+                <img class="product__img" src="images/tracker.png" alt="#">
+                <h2 class="product__title">Fitbit Charge HR Heart Rate and Activity Tracker</h2>
+                <p class="product__text">Black</p>
+                <p class="product__price">$19.99</p>
+            </div>
+            <div class="product">
+                <img class="product__img" src="images/apple-watch.png" alt="#">
+                <h2 class="product__title">Apple Watch Sport 38mm Silver Aluminum Case</h2>
+                <p class="product__text">White</p>
+                <p class="product__price">$49.99</p>
+            </div>
+            <div class="product">
+                <img class="product__img" src="images/headphones.png" alt="#">
+                <h2 class="product__title">Bose SoundLink On-Ear Headphones</h2>
+                <p class="product__text">White</p>
+                <p class="product__price">$119.99</p>
+            </div>
+            <div class="product">
+                <img class="product__img" src="images/dynamic-sonos.png" alt="#">
+                <h2 class="product__title">Sonos Play-1 Wireless HiFi System</h2>
+                <p class="product__text">Black</p>
+                <p class="product__price">$99.99</p>
+            </div>
+            <div class="product product_background">
+                <h2 class="product__title">Nest Learning Thermostat, 3rd Generation</h2>
+                <p class="product__price product__price_color-grey">$49.99</p>
+            </div>
+        </section>
 
         <div class="next-pages">
 
