@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Portland</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/vendor/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -92,61 +92,45 @@
             <div class="filter__item">
                 <ul class="list">
                     <li class="list__item">
-                        <a class="list__item-link" href="#">
                             <p class="list__item-text">Top sales</p>
                             <i class="icon-select icon-select_active"></i>
-                        </a>
+                        <ul class="inside-list"></ul>
                     </li>
                     <li class="list__item">
-                        <a class="list__item-link" href="#">
                             <p class="list__item-text">Brand focus</p>
                             <i class="icon-select icon-select_active"></i>
-                        </a>
+                        <ul class="inside-list"></ul>
                     </li>
-                    <li class="list__item list__item_active">
-                        <a class="list__item-link" href="#">
+                    <li class="list__item">
                             <p class="list__item-text">Hi-tech</p>
                             <i class="icon-select icon-select_active"></i>
-                        </a>
                         <ul class="inside-list">
                             <li class="inside-list__item">
-                                <a class="inside__item-link" href="#">
                                     <p class="inside__item-text">Cell phones</p>
-                                </a>
                             </li>
                             <li class="inside-list__item">
-                                <a class="inside__item-link" href="#">
                                     <p class="inside__item-text">Cameras</p>
-                                </a>
                             </li>
                             <li class="inside-list__item">
-                                <a class="inside__item-link" href="#">
                                     <p class="inside__item-text">Computers</p>
-                                </a>
                             </li>
                             <li class="inside-list__item">
-                                <a class="inside__item-link" href="#">
                                     <p class="inside__item-text">Tv, audio</p>
-                                </a>
                             </li>
                             <li class="inside-list__item">
-                                <a class="inside__item-link" href="#">
                                     <p class="inside__item-text">Video games</p>
-                                </a>
                             </li>
                         </ul>
                     </li>
                     <li class="list__item">
-                        <a class="list__item-link" href="#">
                             <p class="list__item-text">Home</p>
                             <i class="icon-select icon-select_active"></i>
-                        </a>
+                        <ul class="inside-list"></ul>
                     </li>
                     <li class="list__item">
-                        <a class="list__item-link" href="#">
                             <p class="list__item-text">Sale</p>
                             <i class="icon-select icon-select_active"></i>
-                        </a>
+                        <ul class="inside-list"></ul>
                     </li>
                 </ul>
             </div>
@@ -450,6 +434,9 @@
     </div>
 </footer>
 
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

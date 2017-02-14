@@ -412,10 +412,6 @@
     border-bottom: none;
 }
 
-.list__item-link {
-    text-decoration: none;
-}
-
 .list__item-text {
     text-transform: capitalize;
     font: 13px 'Montserrat-Regular';
@@ -424,7 +420,7 @@
     float: left;
 }
 
-.icon-select {
+.list__item .icon-select {
     width: 6px;
     height: 10px;
     display: inline-block;
@@ -437,11 +433,7 @@
     display: none;
 }
 
-.list__item:active .inside-list/*, .list__item_active .inside-list*/ {
-    display: block;
-}
-
-.list__item:active .icon-select_active/*, .list__item_active .icon-select_active*/ {
+.list__item_active .icon-select {
     width: 10px;
     height: 6px;
     background: url("../images/sprite.png") -5px -229px no-repeat;
@@ -457,10 +449,6 @@
 .inside-list__item {
     list-style-type: none;
     border-top: 1px solid #e4e5e7;
-}
-
-.inside__item-link {
-    text-decoration: none;
 }
 
 .inside__item-text {
