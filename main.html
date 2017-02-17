@@ -13,7 +13,9 @@
         <div class="header__wrap-icon">
             <a class="header__icon-menu" href="#"></a>
         </div>
-        <img class="header__logo" src="images/logo.png" alt="#">
+        <a class="header__link" href="#">
+            <img class="header__logo" src="images/logo.png" alt="#">
+        </a>
         <nav class="navigation">
             <a class="navigation__item" href="#">Home</a>
             <a class="navigation__item" href="#">Devices</a>
@@ -21,25 +23,29 @@
             <a class="navigation__item" href="#">Guarantee</a>
             <a class="navigation__item" href="#">About us</a>
         </nav>
-        <i class="header__icon-shopping"></i>
-        <p class="header__text">Cart</p>
-        <p class="header__count">0</p>
-        <a class="header__button" href="#">Sign in</a>
+        <div class="shopping">
+            <i class="header__icon-shopping"></i>
+            <span class="header__text">Cart</span>
+            <span class="header__count">0</span>
+            <a class="header__button" href="#">Sign in</a>
+        </div>
     </div>
 </header>
 
 <section class="tabs">
     <div class="tabs__wrapper">
-        <div class="tabs__list">
-            <a class="tabs__list-item" href="#">Top sales</a>
-            <a class="tabs__list-item" href="#">Brand focus</a>
-            <a class="tabs__list-item tabs__list-item_active" href="#">Hi-tech</a>
-            <a class="tabs__list-item" href="#">Best sellers</a>
-            <a class="tabs__list-item" href="#">Projects</a>
-            <a class="tabs__list-item tabs__list-item_position" href="#">Support</a>
-        </div>
-        <i class="tabs__icon-search"></i>
-        <input class="tabs__input" type="text" placeholder="I'm looking for ...">
+        <nav class="nav__list">
+            <a class="nav__list-item" href="#">Top sales</a>
+            <a class="nav__list-item" href="#">Brand focus</a>
+            <a class="nav__list-item nav__list-item_active" href="#">Hi-tech</a>
+            <a class="nav__list-item" href="#">Best sellers</a>
+            <a class="nav__list-item" href="#">Projects</a>
+            <a class="nav__list-item nav__list-item_position" href="#">Support</a>
+        </nav>
+        <form class="form__tabs">
+            <a class="tabs__icon-search" href="#"></a>
+            <input class="tabs__input" type="text" placeholder="I'm looking for ...">
+        </form>
     </div>
 </section>
 
@@ -70,88 +76,108 @@
 <section class="store">
     <div class="store-wrapper">
         <div class="sort">
-            <p class="sort__text">sort by:</p>
-            <p class="sort__selected">best match</p>
-            <i class="icon-checked"></i>
-            <div class="main-sort">
-                <p class="main-sort__text_margin">keywords</p>
-                <input class="main-sort__input-name" type="text" placeholder="Tablet">
-                <p class="main-sort__text_margin">price</p>
-                <input class="main-sort__input-name_font" type="text" placeholder="10">
-                <p class="main-sort__text_margins">-</p>
-                <input class="main-sort__input-name_font" type="text" placeholder="1000">
-                <i class="main-sort__icon-check-mark"></i>
-                <p class="main-sort__text-shipping">free shipping</p>
+            <div class="sort__span">
+                <span class="sort__text">sort by:</span>
+                <div class="select">
+                    <span class="sort__selected">best match</span>
+                    <i class="icon-checked"></i>
+                </div>
             </div>
-            <p class="sort__text">ship to:</p>
-            <p class="sort__selected">usa</p>
-            <i class="icon-checked"></i>
+            <div class="main-sort">
+                <span class="main-sort__text_margin">keywords</span>
+                <input class="main-sort__input-name" type="text" placeholder="Tablet">
+                <span class="main-sort__text_margin">price</span>
+                <input class="main-sort__input-name_font" type="text" placeholder="10">
+                <span class="main-sort__text_margins">-</span>
+                <input class="main-sort__input-name_font" type="text" placeholder="1000">
+                <i class="main-sort__icon-check_mark"></i>
+                <span class="main-sort__text-shipping">free shipping</span>
+            </div>
+            <div class="sort__span">
+                <span class="sort__text">ship to:</span>
+                <div class="select">
+                    <span class="sort__selected">usa</span>
+                    <i class="icon-checked"></i>
+                </div>
+            </div>
         </div>
 
         <section class="filter">
             <div class="filter__item">
                 <ul class="list">
                     <li class="list__item">
-                            <p class="list__item-text">Top sales</p>
+                        <div class="item">
+                            <span class="list__item-text">Top sales</span>
                             <i class="icon-select icon-select_active"></i>
+                        </div>
                         <ul class="inside-list"></ul>
                     </li>
                     <li class="list__item">
-                            <p class="list__item-text">Brand focus</p>
+                        <div class="item">
+                            <span class="list__item-text">Brand focus</span>
                             <i class="icon-select icon-select_active"></i>
+                        </div>
                         <ul class="inside-list"></ul>
                     </li>
                     <li class="list__item">
-                            <p class="list__item-text">Hi-tech</p>
+                        <div class="item">
+                            <span class="list__item-text">Hi-tech</span>
                             <i class="icon-select icon-select_active"></i>
+                        </div>
                         <ul class="inside-list">
                             <li class="inside-list__item">
-                                    <p class="inside__item-text">Cell phones</p>
+                                <span class="inside__item-text">Cell phones</span>
                             </li>
                             <li class="inside-list__item">
-                                    <p class="inside__item-text">Cameras</p>
+                                <span class="inside__item-text">Cameras</span>
                             </li>
                             <li class="inside-list__item">
-                                    <p class="inside__item-text">Computers</p>
+                                <span class="inside__item-text">Computers</span>
                             </li>
                             <li class="inside-list__item">
-                                    <p class="inside__item-text">Tv, audio</p>
+                                <span class="inside__item-text">Tv, audio</span>
                             </li>
                             <li class="inside-list__item">
-                                    <p class="inside__item-text">Video games</p>
+                                <span class="inside__item-text">Video games</span>
                             </li>
                         </ul>
                     </li>
                     <li class="list__item">
-                            <p class="list__item-text">Home</p>
+                        <div class="item">
+                            <span class="list__item-text">Home</span>
                             <i class="icon-select icon-select_active"></i>
+                        </div>
                         <ul class="inside-list"></ul>
                     </li>
                     <li class="list__item">
-                            <p class="list__item-text">Sale</p>
+                        <div class="item">
+                            <span class="list__item-text">Sale</span>
                             <i class="icon-select icon-select_active"></i>
+                        </div>
                         <ul class="inside-list"></ul>
                     </li>
                 </ul>
             </div>
 
             <div class="filter__item">
-                <p class="filter__text">Available</p>
+                <div class="text__span">
+                    <span class="filter__text">Available</span>
+                </div>
                 <ul class="filter-list">
                     <li class="filter-list__item">
-                        <input id="input-radio" class="item__radio" type="radio" value="storage" name="radio" checked>
+                        <input id="input-radio" class="item__radio" type="radio" value="storage" checked>
                         <label for="input-radio" class="item__label">In storage</label>
                         <span class="item__number">45</span>
                     </li>
                     <li class="filter-list__item">
-                        <input id="input-radio2" class="item__radio" type="radio" value="online-shop" name="radio">
+                        <input id="input-radio2" class="item__radio" type="radio" value="online-shop">
                         <label for="input-radio2" class="item__label">In online shop</label>
                         <span class="item__number">12</span>
                     </li>
                 </ul>
                 <div class="filter__content">
                     <a class="filter__link" href="#">All</a>
-                    <p class="filter__text">Brands</p>
+                    <span class="filter__text">Brands</span>
                 </div>
                 <ul class="filter-list">
                     <li class="filter-list__item">
@@ -180,7 +206,7 @@
             <div class="filter__item">
                 <div class="filter__content">
                     <a class="filter__link" href="#">See all</a>
-                    <p class="filter__text">Condition</p>
+                    <span class="filter__text">Condition</span>
                 </div>
                 <ul class="filter-list">
                     <li class="filter-list__item">
@@ -207,7 +233,9 @@
             </div>
 
             <div class="filter__item">
-                <p class="filter__text">Delivery options</p>
+                <div class="text__span">
+                    <span class="filter__text">Delivery options</span>
+                </div>
                 <ul class="filter-list">
                     <li class="filter-list__item filter-list__item_display">
                         <input id="input-radio3" class="item__radio" type="radio" value="free" name="radio" checked>
@@ -225,37 +253,37 @@
             <a class="product" href="#">
                 <img class="product__img" src="images/apple-tv.png" alt="#">
                 <h2 class="product__title">Apple TV 32GB</h2>
-                <p class="product__text">Black</p>
-                <p class="product__price">$49.99</p>
+                <span class="product__text">Black</span>
+                <span class="product__price">$49.99</span>
             </a>
             <a class="product" href="#">
                 <img class="product__img" src="images/watch.png" alt="#">
                 <h2 class="product__title">Pebble Time</h2>
-                <p class="product__text">Red</p>
-                <p class="product__price">$29.99</p>
+                <span class="product__text">Red</span>
+                <span class="product__price">$29.99</span>
             </a>
 
             <a class="product" href="#">
                 <img class="product__img" src="images/usb-port.png" alt="#">
                 <h2 class="product__title">Zendure 4-Port USB</h2>
-                <p class="product__text">White</p>
-                <p class="product__price">$49.99</p>
+                <span class="product__text">White</span>
+                <span class="product__price">$49.99</span>
             </a>
             <a class="product" href="#">
                 <img class="product__img" src="images/balance.png" alt="#">
                 <h2 class="product__title">Withings Smart Body Analyzer ws-50</h2>
-                <p class="product__text">Black</p>
-                <p class="product__price">$39.99</p>
+                <span class="product__text">Black</span>
+                <span class="product__price">$39.99</span>
             </a>
-            <div class="product product__double">
-                <a class="product__double-link" href="#">
+            <div class="product product_double">
+                <a class="product_double-link" href="#">
                     <div class="product__img-text">
-                        <p class="product__price product__price_color">$39.99</p>
+                        <span class="product__price product__price_color">$39.99</span>
                         <img class="product__img product__img-big" src="images/dynamic.png" alt="#">
                     </div>
                     <div class="product__text-block">
                         <h2 class="product__title product__title_place">JBL Charge 2+</h2>
-                        <p class="product__text product__text_place">Black</p>
+                        <span class="product__text product__text_place">Black</span>
                     </div>
                     <div class="product__button">
                         <a class="product__button product__button-right" href="#">Buy now</a>
@@ -266,41 +294,41 @@
             <a class="product" href="#">
                 <img class="product__img" src="images/lens.png" alt="#">
                 <h2 class="product__title">Ollo Clip New</h2>
-                <p class="product__text">Silver</p>
-                <p class="product__price">$19.99</p>
+                <span class="product__text">Silver</span>
+                <span class="product__price">$19.99</span>
             </a>
             <a class="product" href="#">
                 <img class="product__img" src="images/tracker.png" alt="#">
                 <h2 class="product__title">Fitbit Charge HR Heart Rate and Activity Tracker</h2>
-                <p class="product__text">Black</p>
-                <p class="product__price">$19.99</p>
+                <span class="product__text">Black</span>
+                <span class="product__price">$19.99</span>
             </a>
             <a class="product" href="#">
                 <img class="product__img" src="images/apple-watch.png" alt="#">
                 <h2 class="product__title">Apple Watch Sport 38mm Silver Aluminum Case</h2>
-                <p class="product__text">White</p>
-                <p class="product__price">$49.99</p>
+                <span class="product__text">White</span>
+                <span class="product__price">$49.99</span>
             </a>
             <a class="product" href="#">
                 <img class="product__img" src="images/headphones.png" alt="#">
                 <h2 class="product__title">Bose SoundLink On-Ear Headphones</h2>
-                <p class="product__text">White</p>
-                <p class="product__price">$119.99</p>
+                <span class="product__text">White</span>
+                <span class="product__price">$119.99</span>
             </a>
             <a class="product" href="#">
                 <img class="product__img" src="images/dynamic-sonos.png" alt="#">
                 <h2 class="product__title">Sonos Play-1 Wireless HiFi System</h2>
-                <p class="product__text">Black</p>
-                <p class="product__price">$99.99</p>
+                <span class="product__text">Black</span>
+                <span class="product__price">$99.99</span>
             </a>
             <a class="product product_background" href="#">
                 <h2 class="product__title">Nest Learning Thermostat, 3rd Generation</h2>
-                <p class="product__price product__price_color-grey">$49.99</p>
+                <span class="product__price product__price_color-grey">$49.99</span>
             </a>
         </section>
 
         <div class="sort sort__next-pages">
-            <a class="left" href="#">
+            <a class="left-mark">
                 <i class="arrow-left"></i>
             </a>
             <nav class="pages-numb">
@@ -313,50 +341,50 @@
                 <a class="pages-numb__item" href="#">7</a>
                 <a class="pages-numb__item" href="#">8</a>
             </nav>
-            <a class="right" href="#">
+            <a class="right-mark">
                 <i class="arrow-right"></i>
             </a>
         </div>
 
         <div class="top-sellers">
             <div class="top-sellers__title">
-                <p class="top-sellers__title-span">Best sellers</p>
+                <span class="top-sellers__title-span">Best sellers</span>
             </div>
             <div class="top-sellers__products">
                 <a class="product product__top" href="#">
                     <img class="products-item__img" src="images/hat.png" alt="#">
                     <h2 class="product__title">Beanie</h2>
-                    <p class="product__text">Green</p>
+                    <span class="product__text">Green</span>
                     <div class="product__price product__price-block">
-                        <p class="product__price-old">&pound;39.99</p>
-                        <p class="product__price-new">&pound;29.99</p>
+                        <span class="product__price-old">&pound;39.99</span>
+                        <span class="product__price-new">&pound;29.99</span>
                     </div>
                 </a>
                 <a class="product product__top" href="#">
                     <img class="products-item__img" src="images/t-shirt.png" alt="#">
                     <h2 class="product__title">T-Shirt With a Print</h2>
-                    <p class="product__text">Dark blue</p>
+                    <span class="product__text">Dark blue</span>
                     <div class="product__price product__price-block">
-                        <p class="product__price-old">&pound;29.99</p>
-                        <p class="product__price-new">&pound;19.99</p>
+                        <span class="product__price-old">&pound;29.99</span>
+                        <span class="product__price-new">&pound;19.99</span>
                     </div>
                 </a>
                 <a class="product product__top" href="#">
                     <img class="products-item__img" src="images/jacket.png" alt="#">
                     <h2 class="product__title">Pile-Lined Hooded Jacket</h2>
-                    <p class="product__text">Dark blue</p>
+                    <span class="product__text">Dark blue</span>
                     <div class="product__price product__price-block">
-                        <p class="product__price-old">&pound;49.99</p>
-                        <p class="product__price-new">&pound;39.99</p>
+                        <span class="product__price-old">&pound;49.99</span>
+                        <span class="product__price-new">&pound;39.99</span>
                     </div>
                 </a>
                 <a class="product product__top" href="#">
                     <img class="products-item__img" src="images/trainers.png" alt="#">
                     <h2 class="product__title">Trainers</h2>
-                    <p class="product__text">Space grey</p>
+                    <span class="product__text">Space grey</span>
                     <div class="product__price product__price-block">
-                        <p class="product__price-old">&pound;39.99</p>
-                        <p class="product__price-new">&pound;29.99</p>
+                        <span class="product__price-old">&pound;39.99</span>
+                        <span class="product__price-new">&pound;29.99</span>
                     </div>
                 </a>
             </div>
@@ -373,8 +401,8 @@
                 <div class="comment__item">
                     <img class="comment__item-img" src="images/user1.png" alt="#">
                     <div class="text">
-                        <p class="comment__item-name">Celia Fields</p>
-                        <p class="comment__item-text comment__item-text_margin">UX Expert</p>
+                        <span class="comment__item-name">Celia Fields</span>
+                        <span class="comment__item-text comment__item-text_margin">UX Expert</span>
                     </div>
                 </div>
                 <p class="comment__text">This I have produced as a scantling of Jack’s great eloquence and the force of
@@ -384,8 +412,8 @@
                 <div class="comment__item">
                     <img class="comment__item-img" src="images/user2.png" alt="#">
                     <div class="text">
-                        <p class="comment__item-name">Alexander Lee</p>
-                        <p class="comment__item-text comment__item-text_margin">Founder</p>
+                        <span class="comment__item-name">Alexander Lee</span>
+                        <span class="comment__item-text comment__item-text_margin">Founder</span>
                     </div>
                 </div>
                 <p class="comment__text">Looking cautiously round, to ascertain that they were not overheard, the two
@@ -395,8 +423,8 @@
                 <div class="comment__item">
                     <img class="comment__item-img" src="images/user3.png" alt="#">
                     <div class="text">
-                        <p class="comment__item-name">Lenora Sandoval</p>
-                        <p class="comment__item-text comment__item-text_margin">Product Manager</p>
+                        <span class="comment__item-name">Lenora Sandoval</span>
+                        <span class="comment__item-text comment__item-text_margin">Product Manager</span>
                     </div>
                 </div>
                 <p class="comment__text">This sounded a very good reason, and Alice was quite pleased to know it. 'I
@@ -409,7 +437,9 @@
 <footer class="footer">
     <div class="footer__wrapper">
         <div class="footer__up">
-            <i class="footer__up-logo"></i>
+            <a class="footer__logo" href="#">
+                <i class="footer__up-logo"></i>
+            </a>
             <nav class="footer__navigation">
                 <a class="footer__navigation-item" href="#">Home</a>
                 <a class="footer__navigation-item" href="#">Shop</a>
@@ -427,8 +457,8 @@
             <p class="footer__down-text">She gave my mother such a turn, that I have always been convinced I am indebted
                 to Miss Betsey for having been born on a Friday.</p>
             <div class="confidence">
-                <p class="confidence__text confidence__text_margin">Privacy Policy</p>
-                <p class="confidence__text">Terms and Conditions</p>
+                <a class="confidence__text confidence__text_margin" href="#">Privacy Policy</a>
+                <a class="confidence__text" href="#">Terms and Conditions</a>
             </div>
         </div>
     </div>
