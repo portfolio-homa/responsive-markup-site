@@ -165,12 +165,12 @@
                 </div>
                 <ul class="filter-list">
                     <li class="filter-list__item">
-                        <input id="input-radio" class="item__radio" type="radio" value="storage" checked>
+                        <input id="input-radio" class="item__radio" type="radio" value="storage" name="radio" checked>
                         <label for="input-radio" class="item__label">In storage</label>
                         <span class="item__number">45</span>
                     </li>
                     <li class="filter-list__item">
-                        <input id="input-radio2" class="item__radio" type="radio" value="online-shop">
+                        <input id="input-radio2" class="item__radio" type="radio" value="online-shop" name="radio">
                         <label for="input-radio2" class="item__label">In online shop</label>
                         <span class="item__number">12</span>
                     </li>
@@ -238,11 +238,11 @@
                 </div>
                 <ul class="filter-list">
                     <li class="filter-list__item filter-list__item_display">
-                        <input id="input-radio3" class="item__radio" type="radio" value="free" name="radio" checked>
+                        <input id="input-radio3" class="item__radio" type="radio" value="free" name="radio2" checked>
                         <label for="input-radio3" class="item__label">Free</label>
                     </li>
                     <li class="filter-list__item filter-list__item_display">
-                        <input id="input-radio4" class="item__radio" type="radio" value="price" name="radio">
+                        <input id="input-radio4" class="item__radio" type="radio" value="price" name="radio2">
                         <label for="input-radio4" class="item__label">$4.99</label>
                     </li>
                 </ul>
@@ -321,9 +321,14 @@
                 <span class="product__text">Black</span>
                 <span class="product__price">$99.99</span>
             </a>
-            <a class="product product_background" href="#">
-                <h2 class="product__title">Nest Learning Thermostat, 3rd Generation</h2>
-                <span class="product__price product__price_color-grey">$49.99</span>
+            <a class="product" href="#">
+                <div class="product__img-text">
+                    <h2 class="product__title product__title_position">Nest Learning Thermostat, 3rd Generation</h2>
+                    <span class="product__price product__price_color-grey">$49.99</span>
+                    <img class="product__img_background" src="images/thermostat.png" alt="#">
+                </div>
+
+
             </a>
         </section>
 

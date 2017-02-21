@@ -105,7 +105,7 @@
 }
 
 .header__button:hover {
-    background-color: #00e2aa;
+    background-color: #e3e8f0;
 }
 
 .header__icon-shopping {
@@ -401,8 +401,9 @@
     width: 20px;
     height: 20px;
     display: inline-block;
-    background: url("../images/sprite.png") -1px -156px no-repeat;
-    margin: 18px 10px 0 32px;
+    background: url("../images/sprite.png") -1px -246px no-repeat #00e2aa;
+    margin: 21px 10px 0 32px;
+    border-radius: 50px;
 }
 
 .main-sort__text-shipping {
@@ -464,11 +465,20 @@
     margin-bottom: 13px;
 }
 
-.list__item .icon-select {
+/*.list__item .icon-select {
     width: 6px;
     height: 10px;
     display: inline-block;
     background: url("../images/sprite.png") -8px -198px no-repeat;
+    float: right;
+    margin: 16px 19px 0 0;
+}*/
+
+.list__item .icon-select {
+    width: 6px;
+    height: 10px;
+    display: inline-block;
+    background: url("../images/icon.png") no-repeat;
     float: right;
     margin: 16px 19px 0 0;
 }
@@ -478,10 +488,14 @@
 }
 
 .list__item_active .icon-select {
+    transform: rotate(90deg);
+}
+
+/*.list__item_active .icon-select {
     width: 10px;
     height: 6px;
     background: url("../images/sprite.png") -5px -229px no-repeat;
-}
+}*/
 
 .inside-list {
     background-color: #f0f2f7;
@@ -735,10 +749,6 @@
     float: left;
 }
 
-.product__button {
-    float: right;
-}
-
 .product__title_place {
     margin: 20px 0 14px 25px;
 }
@@ -749,6 +759,7 @@
 }
 
 .product__button {
+    float: right;
     text-decoration: none;
     text-transform: uppercase;
     font: 11px 'Montserrat-Regular';
@@ -771,13 +782,24 @@
 
 .product__button-right, .product__button-left {
     padding: 10px 30px;
+    transition: background-color 0.75s;
 }
 
-.product_background {
-    background: url("../images/thermostat.png") -121px 0 no-repeat;
+.product__button-right:hover, .product__button-left:hover {
+    background-color: #e3e8f0;
+}
+
+.product__title_position, .product__price_color-grey {
+    position: absolute;
+}
+
+.product__title_position {
+    margin-top: 40px;
 }
 
 .product__price_color-grey {
+    top: 90px;
+    left: 110px;
     color: #6d6c6b;
  }
 
@@ -795,7 +817,7 @@
 }
 
 .left-mark:hover, .right-mark:hover {
-    background-color: #00e2aa;
+    background-color: #d0d3d8;
 }
 
 .left-mark {
@@ -1093,6 +1115,11 @@
     color: #7f7f81;
     float: left;
     margin: 0;
+    transition: color 0.75s;
+}
+
+.confidence__text:hover {
+    color: #00e2aa;
 }
 
 .confidence__text_margin {
