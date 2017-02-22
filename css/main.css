@@ -79,7 +79,7 @@
     margin-left: 29px;
     color: #343e5c;
     font: 14px 'Montserrat-Regular';
-    transition: color 0.75s;
+    transition: color 0.2s;
 }
 
 .navigation__item:hover {
@@ -101,7 +101,7 @@
     padding: 10px 15px;
     font: 11px 'Montserrat-Regular';
     color: #343e5c;
-    transition: background-color 0.75s;
+    transition: background-color 0.2s;
 }
 
 .header__button:hover {
@@ -160,7 +160,7 @@
     font: 11px 'Montserrat-Regular';
     color: #b9bed1;
     margin: 0 30px 23px 0;
-    transition: color 0.75s;
+    transition: color 0.2s;
 }
 
 .nav__list-item:hover, .nav__list-item_active {
@@ -200,14 +200,106 @@
     outline: none;
 }
 
+.slider {
+    width: 1000px;
+    margin: auto;
+}
+
 .slide {
-    width: 100%;
     background-color: #1c1e23;
     position: relative;
     overflow: hidden;
 }
 
-.slide__banner {
+.my-slide {
+    width: 880px;
+    margin: auto;
+}
+
+.slick-slide {
+    width: 880px;
+    float: left;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.slick-list {
+    height: 500px;
+    left: 195px;
+}
+
+.slick-arrow {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background: url("../images/sprite.png") 0 -91px no-repeat;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.slick-arrow:focus {
+    outline: none;
+}
+
+.slick-prev {
+    float: left;
+    top: 227px;
+    left: 165px;
+    transform: rotate(180deg);
+}
+
+.slick-next {
+    float: right;
+    right: 165px;
+    bottom: 273px;
+}
+
+.slick-dots {
+    width: 80px;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: auto;
+    position: relative;
+    bottom: 38px;
+}
+
+.slick-dots__item {
+    float: left;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots__item:hover .slick-button, .slick-dots__item .slick-button_active {
+    background-color: #ffffff;
+    border: none;
+}
+
+.slick-button {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    background: transparent;
+    border: 2px solid #8e8f91;
+    border-radius: 50px;
+    padding: 0;
+}
+
+.slick-button:hover, .slick-button:active, .slick-button_active {
+    /*width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border: none;*/
+}
+
+/*.slide__banner {
     width: 880px;
     height: 500px;
     margin: auto;
@@ -221,7 +313,7 @@
     display: inline-block;
     background: url("../images/sprite.png") 0 -91px no-repeat;
     margin: 227px 165px 0 0;
-}
+}*/
 
 .slide__img {
     width: 300px;
@@ -261,7 +353,7 @@
     margin-top: 0;
 }
 
-.slide__item-icon {
+/*.slide__item-icon {
     width: 64px;
     height: 8px;
     margin: auto;
@@ -284,7 +376,7 @@
     height: 8px;
     background-color: #ffffff;
     border: none;
-}
+}*/
 
 .store {
     background-color: #e4e5e7;
@@ -465,15 +557,6 @@
     margin-bottom: 13px;
 }
 
-/*.list__item .icon-select {
-    width: 6px;
-    height: 10px;
-    display: inline-block;
-    background: url("../images/sprite.png") -8px -198px no-repeat;
-    float: right;
-    margin: 16px 19px 0 0;
-}*/
-
 .list__item .icon-select {
     width: 6px;
     height: 10px;
@@ -481,6 +564,7 @@
     background: url("../images/icon.png") no-repeat;
     float: right;
     margin: 16px 19px 0 0;
+    transition: transform 0.5s;
 }
 
 .list__item .inside-list {
@@ -490,12 +574,6 @@
 .list__item_active .icon-select {
     transform: rotate(90deg);
 }
-
-/*.list__item_active .icon-select {
-    width: 10px;
-    height: 6px;
-    background: url("../images/sprite.png") -5px -229px no-repeat;
-}*/
 
 .inside-list {
     background-color: #f0f2f7;
@@ -782,7 +860,7 @@
 
 .product__button-right, .product__button-left {
     padding: 10px 30px;
-    transition: background-color 0.75s;
+    transition: background-color 0.2s;
 }
 
 .product__button-right:hover, .product__button-left:hover {
@@ -813,7 +891,7 @@
     width: 195px;
     height: auto;
     display: block;
-    transition: background-color 0.75s;
+    transition: background-color 0.2s;
 }
 
 .left-mark:hover, .right-mark:hover {
@@ -843,17 +921,22 @@
 }
 
 .pages-numb {
-    float: left;
-    margin: 36px 156px;
+    width: 460px;
+    margin: 19px auto;
 }
 
 .pages-numb__item {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    text-align: center;
     text-decoration: none;
     font: 14px 'Montserrat-Regular';
     color: #3a405b;
     margin-right: 6px;
-    padding: 15px 20px;
-    transition: border-radius 0.75s, box-shadow 0.75s;
+    transition: border-radius 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    line-height: 48px;
 }
 
 .pages-numb__item:last-child {
@@ -1050,7 +1133,7 @@
     font: 12px 'Montserrat-Regular';
     color: #ffffff;
     margin-right: 30px;
-    transition: color 0.75s;
+    transition: color 0.2s;
 }
 
 .footer__navigation-item:hover {
@@ -1115,7 +1198,7 @@
     color: #7f7f81;
     float: left;
     margin: 0;
-    transition: color 0.75s;
+    transition: color 0.2s;
 }
 
 .confidence__text:hover {
