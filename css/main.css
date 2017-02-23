@@ -206,6 +206,7 @@
 }
 
 .slide {
+    height: 500px;
     background-color: #1c1e23;
     position: relative;
     overflow: hidden;
@@ -227,12 +228,12 @@
 
 .slick-list {
     height: 500px;
-    left: 195px;
 }
 
 .slick-arrow {
     width: 42px;
     height: 42px;
+    font-size: 0;
     display: inline-block;
     background: url("../images/sprite.png") 0 -91px no-repeat;
     border: none;
@@ -247,18 +248,18 @@
 .slick-prev {
     float: left;
     top: 227px;
-    left: 165px;
+    left: -100px;
     transform: rotate(180deg);
 }
 
 .slick-next {
     float: right;
-    right: 165px;
+    right: -142px;
     bottom: 273px;
 }
 
 .slick-dots {
-    width: 80px;
+    width: 60px;
     list-style-type: none;
     overflow: hidden;
     padding: 0;
@@ -267,53 +268,38 @@
     bottom: 38px;
 }
 
-.slick-dots__item {
-    float: left;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    cursor: pointer;
-}
-
-.slick-dots__item:hover .slick-button, .slick-dots__item .slick-button_active {
-    background-color: #ffffff;
-    border: none;
-}
-
-.slick-button {
+.slick-dots li {
+    position: relative;
+    display: inline-block;
     width: 8px;
     height: 8px;
+    margin-right: 8px;
+    padding: 0;
     cursor: pointer;
-    color: transparent;
-    outline: none;
-    background: transparent;
+}
+
+.slick-dots li:last-child {
+    margin-right: 0;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    cursor: pointer;
     border: 2px solid #8e8f91;
     border-radius: 50px;
-    padding: 0;
+    outline: none;
+    background: transparent;
 }
 
-.slick-button:hover, .slick-button:active, .slick-button_active {
-    /*width: 8px;
-    height: 8px;
+.slick-dots li button:hover,.slick-dots li.slick-active button{
+    border: none;
     background-color: #ffffff;
-    border: none;*/
 }
-
-/*.slide__banner {
-    width: 880px;
-    height: 500px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slide__icon-arrow {
-    float: right;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    background: url("../images/sprite.png") 0 -91px no-repeat;
-    margin: 227px 165px 0 0;
-}*/
 
 .slide__img {
     width: 300px;
@@ -352,31 +338,6 @@
     padding: 15px 50px;
     margin-top: 0;
 }
-
-/*.slide__item-icon {
-    width: 64px;
-    height: 8px;
-    margin: auto;
-    position: absolute;
-    top: 454px;
-    left: 45%;
-}
-
-.slide__item-next {
-    width: 4px;
-    height: 4px;
-    float: left;
-    border: 2px solid #8e8f91;
-    border-radius: 50px;
-    margin-right: 8px;
-}
-
-.slide__item-next:hover, .slide__item-next:active, .slide__item-next_active {
-    width: 8px;
-    height: 8px;
-    background-color: #ffffff;
-    border: none;
-}*/
 
 .store {
     background-color: #e4e5e7;
