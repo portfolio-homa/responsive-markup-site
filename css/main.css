@@ -139,7 +139,6 @@
 }
 
 .tabs {
-    width: 100%;
     background-color: #ffffff;
 }
 
@@ -1168,4 +1167,271 @@
 
 .confidence__text_margin {
     margin-right: 30px;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1169px) {
+
+    .header__wrapper {
+        width: 1130px;
+    }
+
+    .header__icon-menu {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tabs__wrapper {
+        width: 1130px;
+    }
+
+    .shopping {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .nav__list {
+        width: 888px;
+        margin-left: 20px;
+    }
+
+    .slick-next {
+        right: -100px;
+    }
+
+    .store-wrapper {
+        width: 1129px;
+    }
+
+    .sort__text {
+        margin-right: 62px;
+    }
+
+    .products {
+        width: 840px;
+    }
+
+    .product {
+        width: 250px;
+    }
+
+    .product_double {
+        width: 530px;
+    }
+
+    .product__top {
+        width: 281px;
+    }
+
+    .footer__wrapper {
+        width: 1130px;
+    }
+
+}
+
+/*Tablet*/
+
+@media (max-width: 979px) {
+
+    .header__wrapper {
+        width: 768px;
+        margin: auto;
+    }
+
+    .header__icon-menu {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header__link {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    .navigation__item {
+        margin-left: 10px;
+        font: 12px 'Montserrat-Regular';
+    }
+
+    .shopping {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .header__text {
+        font: 10px 'Montserrat-Regular';
+        line-height: 38px;
+    }
+
+    .header__count {
+        margin-right: 10px;
+    }
+
+    .header__button {
+        font: 10px 'Montserrat-Regular';
+    }
+
+    .tabs__wrapper {
+        width: 768px;
+    }
+
+    .nav__list {
+        width: 527px;
+        margin-left: 20px;
+    }
+
+    .nav__list-item_position {
+        margin-left: 0;
+    }
+
+    .form__tabs {
+        margin-right: 20px;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .store-wrapper {
+        width: 768px;
+    }
+
+    .sort {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .sort__text {
+        font: 10px 'Montserrat-Regular';
+        margin-right: 10px;
+    }
+
+    .sort__selected {
+        font: 10px 'Montserrat-Regular';
+    }
+
+    .icon-checked {
+        margin-right: 8px;
+    }
+
+    .main-sort {
+        width: 467px;
+    }
+
+    .main-sort__text_margin {
+        font: 10px 'Montserrat-Regular';
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-sort__input-name {
+        width: 90px;
+        font: 12px 'Montserrat-Regular';
+    }
+
+    .main-sort__input-name_font {
+        width: 40px;
+        font: 12px 'Montserrat-Regular';
+    }
+
+    .main-sort__icon-check_mark {
+        margin-left: 10px;
+    }
+
+    .main-sort__text-shipping {
+        font: 12px 'Montserrat-Regular';
+    }
+
+    .filter {
+        width: 250px;
+        margin-left: 6px;
+    }
+
+    .filter-list__item_display {
+        padding-right: 28px;
+    }
+
+    .products {
+        width: 512px;
+    }
+
+    .product {
+        width: 223px;
+    }
+
+    .product_double {
+        width: 476px;
+    }
+
+    .sort__next-pages {
+        width: 756px;
+    }
+
+    .left-mark, .right-mark {
+        width: 148px;
+    }
+
+    .arrow-left, .arrow-right {
+        margin-left: 75px;
+        margin-right: 75px;
+     }
+
+    .top-sellers {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .product__top {
+        width: 251px;
+    }
+
+    .product__top:last-child {
+        display: none;
+    }
+
+    .product__top:nth-child(3) {
+        border-right: none;
+    }
+
+    .users__wrapper {
+        width: 768px;
+    }
+
+    .comment__wrapper {
+        width: 675px;
+        margin: 0 auto;
+    }
+
+    .comment {
+        width: 195px;
+        margin-right: 45px;
+    }
+
+    .footer__wrapper {
+        width: 746px;
+    }
+
+    .footer__logo {
+        margin-right: 100px;
+    }
+
+    .footer__down-text {
+        width: 335px;
+    }
+
+
+
+}
+
+
+/*Phone*/
+
+@media  (max-width: 1023px){
+    .navigation {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
 }
