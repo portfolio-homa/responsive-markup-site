@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function(){
     $('.list__item').click(function () {
 
@@ -16,4 +13,11 @@ $(document).ready(function(){
         dots: true,
         infinite: true
     });
+
+    $('.header__icon-menu').click(function () {
+
+        $(this).toggleClass('menu-nav');
+        $(this).find('.navigation').slideToggle('slow');
+
+    })
 });
