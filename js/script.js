@@ -14,10 +14,10 @@ $(document).ready(function(){
         infinite: true
     });
 
-    $('.header__icon-menu').click(function () {
+    $('.header__wrap-icon').click(function () {
 
         $(this).toggleClass('menu-nav');
-        $(this).find('.navigation').slideToggle('slow');
+        $('.header').find('.navigation').slideToggle('slow');
 
     })
 });
