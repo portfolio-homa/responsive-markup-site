@@ -102,6 +102,11 @@
     font: 11px 'Montserrat-Regular';
     color: #343e5c;
     transition: background-color 0.2s;
+    background-color: #ffffff;
+}
+
+.header__button:focus {
+    outline: none;
 }
 
 .header__button:hover {
@@ -193,6 +198,11 @@
     background: url("../images/sprite.png") -5px -57px no-repeat;
     margin-right: 10px;
     margin-top: 3px;
+    border: none;
+}
+
+.tabs__icon-search:focus {
+    outline: none;
 }
 
 .tabs__input {
@@ -342,9 +352,15 @@
     font: 11px 'Montserrat-Regular';
     color: #ffffff;
     background-color: #2754eb;
+    border: none;
     border-radius: 50px;
     padding: 15px 50px;
     margin-top: 0;
+    cursor: pointer;
+}
+
+.slide__button:focus {
+    outline: none;
 }
 
 .store {
@@ -838,6 +854,8 @@
     color: #3a405b;
     margin-top: 10px;
     margin-right: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 
 .product__button-right {
